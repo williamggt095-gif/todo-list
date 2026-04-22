@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>To-do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="topo">
+      <h1>📝</h1>
+      <button onclick="toggleDarkMode()">🌙</button>
+    </div>
+
+    <input type="text" id="inputTarefa" placeholder="Digite uma tarefa...">
+    <button onclick="adicionarTarefa()">➕</button>
+
+    <div class="filtros">
+      <button onclick="filtrar('todas')">📋</button>
+      <button onclick="filtrar('pendentes')">⏳</button>
+      <button onclick="filtrar('concluidas')">✅</button>
+    </div>
+
+    <p id="contador"></p>
+
+    <button onclick="limparConcluidas()">🧹 Limpar</button>
+
+    <ul id="lista"></ul>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
